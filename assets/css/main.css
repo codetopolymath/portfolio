@@ -1,5 +1,47 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600&display=swap");
+
+/* Custom Portfolio Styles - Optimized May 2025 */
+.resume-button {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 5px #5cbaca; }
+  to { box-shadow: 0 0 20px #b926b2; }
+}
+
+.portfolio-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.portfolio-btn {
+  display: inline-block;
+  border: 1px solid #333;
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.portfolio-btn:hover {
+  box-shadow: 0 0 10px #fff;
+}
+
+/* Performance optimizations */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add will-change for elements that will animate */
+.no-effect {
+  will-change: transform;
+}
 
 
 
@@ -1130,6 +1172,7 @@ input, select, textarea {
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
 		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;

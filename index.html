@@ -1,9 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>polymath</title>
+		<title>Rohit Ghawale | Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Portfolio of Rohit Ghawale - Software Developer specializing in IPFS, ML&AI, and Blockchain Development" />
+		<meta name="keywords" content="software developer, blockchain, IPFS, machine learning, portfolio" />
+		<!-- Performance optimizations: Resource hints -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preload" href="assets/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
+		<!-- Stylesheets -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -24,16 +31,9 @@
 
 								<h4>Software Developer | IPFS | ML&AI |  Blockchain Developer</h4>
 								<h6>A Jack of all trades is a master of none, but oftentimes better than a master of one</h6>
-								<a class="button icon fa-download no-effect" href="https://docs.google.com/document/d/1agoXIg3w8G_Gupdj__Y4k3f8HalgIK_9/edit?usp=sharing&ouid=108514117575821223784&rtpof=true&sd=true" download style="animation: glow 1s ease-in-out infinite alternate;">
+								<a class="button icon fa-download no-effect resume-button" href="https://docs.google.com/document/d/1agoXIg3w8G_Gupdj__Y4k3f8HalgIK_9/edit?usp=sharing&ouid=108514117575821223784&rtpof=true&sd=true" download>
 									Download Resume
-								  </a>
-								  
-								  <style>
-									@keyframes glow {
-									  from { box-shadow: 0 0 5px #5cbaca; }
-									  to { box-shadow: 0 0 20px #b926b2; }
-									}
-								  </style>
+								</a>
 							</div>
 						</div>
 						<nav>
@@ -54,7 +54,7 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<span class="image main"><img src="images/pic01.jpg" alt="Introduction Image" loading="lazy" /></span>
 								<p> 
 									Hi there, let me introduce myself. I'm a passionate backend developer who loves nothing more than creating efficient and scalable systems that solve complex problems. My strong foundation in Python and intermediate knowledge of Linux and scripting allow me to approach every project with a unique perspective, finding the best solution for the task at hand.
 
@@ -69,27 +69,12 @@
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Work</h2>
-								<a href="https://codetopolymath.github.io/portfolio-cyberpunkstyle/code.to.polymath/home.html" class="button small" style="display: inline-block; margin-right: 295px;">Portfolio 1</a>
-								<a href="https://my-cage-bbd3e.stackbit.app/" class="button small" style="display: inline-block;">Portfolio 2</a>
-
-								<style>
-									.button {
-									  display: inline-block;
-									  border: 1px solid #333;
-									  color: #fff;
-									  background-color: #333;
-									  text-decoration: none;
-									  text-align: center;
-									  box-shadow: 0 0 0 transparent;
-									  transition: box-shadow 0.5s ease-in-out;
-									}
-									
-									.button:hover {
-									  box-shadow: 0 0 10px #fff;
-									}
-								  </style>
+								<div class="portfolio-links">
+									<a href="https://codetopolymath.github.io/portfolio-cyberpunkstyle/code.to.polymath/home.html" class="button small portfolio-btn">Portfolio 1</a>
+									<a href="https://my-cage-bbd3e.stackbit.app/" class="button small portfolio-btn">Portfolio 2</a>
+								</div>
 								 
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<span class="image main"><img src="images/pic02.jpg" alt="Work Experience Image" loading="lazy" /></span>
 								<p><b>Junior Software Developer Engineer at SimplicityLabs/Verifier.Official</b><p>
 								<ul class="Lists">
 									<li>Duration: 07/2022 to current</li>
@@ -112,7 +97,7 @@
 						<!-- Project -->
 						<article id="project">
 							<h2 class="major">professional project</h2>
-							<span class="image main"><img src="images/simplicityLogo.png" alt="" /></span>
+							<span class="image main"><img src="images/simplicityLogo.png" alt="Simplicity Labs Logo" loading="lazy" /></span>
 							<p> 
 								<h4>TRANSPARENCY - sole backend developer</h4>
 								<h5>Revolutionizing Messaging in India: The Ultimate Anti-Spam Solution</h5>
@@ -280,7 +265,7 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main"><img src="images/pic03.jpg" alt="About Me Image" loading="lazy" /></span>
 								<h4>Education</h4>
 									<div class="table-wrapper">
 										<table class="alt">
@@ -621,12 +606,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- BG -->
 			<div id="bg"></div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Scripts - optimized with defer for better loading performance -->
+			<script src="assets/js/jquery.min.js" defer></script>
+			<script src="assets/js/browser.min.js" defer></script>
+			<script src="assets/js/breakpoints.min.js" defer></script>
+			<script src="assets/js/util.js" defer></script>
+			<script src="assets/js/main.js" defer></script>
 
 	</body>
 </html>

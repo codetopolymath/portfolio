@@ -2,10 +2,14 @@
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
+	Optimized version - May 2025
 */
 
 (function($) {
-
+	'use strict';
+	
+	// Cache DOM elements for better performance
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
@@ -33,24 +37,20 @@
 
 	// Fix: Flexbox min-height bug on IE.
 		if (browser.name == 'ie') {
-
 			var flexboxFixTimeoutId;
-
-			$window.on('resize.flexbox-fix', function() {
-
+			
+			// Debounced resize handler
+			function handleResize() {
 				clearTimeout(flexboxFixTimeoutId);
-
+				
 				flexboxFixTimeoutId = setTimeout(function() {
-
-					if ($wrapper.prop('scrollHeight') > $window.height())
-						$wrapper.css('height', 'auto');
-					else
-						$wrapper.css('height', '100vh');
-
+					$wrapper.css('height', 
+						$wrapper.prop('scrollHeight') > $window.height() ? 'auto' : '100vh'
+					);
 				}, 250);
-
-			}).triggerHandler('resize.flexbox-fix');
-
+			}
+			
+			$window.on('resize.flexbox-fix', handleResize).triggerHandler('resize.flexbox-fix');
 		}
 
 	// Nav.
@@ -286,17 +286,17 @@
 
 			};
 
-		// Articles.
+		// Articles - optimized with event delegation where possible.
 			$main_articles.each(function() {
-
 				var $this = $(this);
 
-				// Close.
-					$('<div class="close">Close</div>')
-						.appendTo($this)
-						.on('click', function() {
-							location.hash = '';
-						});
+				// Close - create once and cache
+				var $close = $('<div class="close">Close</div>');
+				$close.appendTo($this)
+					.on('click', function(e) {
+						e.preventDefault();
+						location.hash = '';
+					});
 
 				// Prevent clicks from inside article from bubbling.
 					$this.on('click', function(event) {
@@ -314,23 +314,12 @@
 
 			});
 
+			// Optimized event handler with early return
 			$window.on('keyup', function(event) {
-
-				switch (event.keyCode) {
-
-					case 27:
-
-						// Article visible? Hide.
-							if ($body.hasClass('is-article-visible'))
-								$main._hide(true);
-
-						break;
-
-					default:
-						break;
-
+				// Only care about Escape key (27)
+				if (event.keyCode === 27 && $body.hasClass('is-article-visible')) {
+					$main._hide(true);
 				}
-
 			});
 
 			$window.on('hashchange', function(event) {
@@ -364,25 +353,29 @@
 
 		// Scroll restoration.
 		// This prevents the page from scrolling back to the top on a hashchange.
-			if ('scrollRestoration' in history)
+			if ('scrollRestoration' in history) {
 				history.scrollRestoration = 'manual';
+			}
 			else {
-
+				// Use a throttled scroll handler for better performance
 				var	oldScrollPos = 0,
 					scrollPos = 0,
-					$htmlbody = $('html,body');
-
-				$window
-					.on('scroll', function() {
-
-						oldScrollPos = scrollPos;
-						scrollPos = $htmlbody.scrollTop();
-
-					})
-					.on('hashchange', function() {
-						$window.scrollTop(oldScrollPos);
-					});
-
+					$htmlbody = $('html,body'),
+					scrollThrottle;
+				
+				$window.on('scroll', function() {
+					// Only update scroll position every 100ms for better performance
+					if (!scrollThrottle) {
+						scrollThrottle = setTimeout(function() {
+							oldScrollPos = scrollPos;
+							scrollPos = $htmlbody.scrollTop();
+							scrollThrottle = null;
+						}, 100);
+					}
+				})
+				.on('hashchange', function() {
+					$window.scrollTop(oldScrollPos);
+				});
 			}
 
 		// Initialize.
