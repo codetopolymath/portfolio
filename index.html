@@ -1,617 +1,309 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Rohit Ghawale | Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Portfolio of Rohit Ghawale - Software Developer specializing in IPFS, ML&AI, and Blockchain Development" />
-		<meta name="keywords" content="software developer, blockchain, IPFS, machine learning, portfolio" />
-		<!-- Performance optimizations: Resource hints -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="preload" href="assets/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
-		<!-- Stylesheets -->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Rohit Ghawale — Backend Lead · Distributed & High-Performance Systems</title>
+	<meta name="description" content="Rohit Ghawale — Backend Lead specializing in high-throughput, sub-millisecond distributed systems. Rust, Python, Go, Java. Built a telecom platform to 150K TPS at 99.9% uptime." />
+	<meta name="keywords" content="Rohit Ghawale, backend engineer, Rust, Tokio, Axum, distributed systems, high performance, telecom, SMPP, ClickHouse, PostgreSQL, Kafka" />
+	<meta name="author" content="Rohit Ghawale" />
+	<link rel="canonical" href="https://codetopolymath.github.io/portfolio/" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Open Graph / social preview -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Rohit Ghawale — Backend Lead · Distributed & High-Performance Systems" />
+	<meta property="og:description" content="High-throughput, sub-millisecond systems for mission-critical telecom & distributed platforms. Rust · Python · Go · Java." />
+	<meta property="og:url" content="https://codetopolymath.github.io/portfolio/" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Rohit Ghawale — Backend Lead · Distributed & High-Performance Systems" />
+	<meta name="twitter:description" content="High-throughput, sub-millisecond systems for mission-critical telecom & distributed platforms." />
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-paw"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Rohit Ghawale</h1>
-								<!-- <h6  >@codeToPolymath</h6> -->
+	<meta name="theme-color" content="#1a1b26" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" />
+	<link rel="stylesheet" href="style.css" />
 
-								<h4>Software Developer | IPFS | ML&AI |  Blockchain Developer</h4>
-								<h6>A Jack of all trades is a master of none, but oftentimes better than a master of one</h6>
-								<a class="button icon fa-download no-effect resume-button" href="https://docs.google.com/document/d/1agoXIg3w8G_Gupdj__Y4k3f8HalgIK_9/edit?usp=sharing&ouid=108514117575821223784&rtpof=true&sd=true" download>
-									Download Resume
-								</a>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a class="no-effect" href="#intro">Intro</a></li>
-								<li><a class="no-effect" href="#work">Work</a></li>
-								<li><a class="no-effect" href="#project">Project</a></li>
-								<li><a class="no-effect" href="#about">About</a></li>
-								<li><a class="no-effect" href="#contact">Contact</a></li>
-								<li><a class="no-effect" href="#timeline">timeline</a></li>
-								<!-- <li><a href="#elements">elements</a></li> -->
-							</ul>
-						</nav>
-					</header>
+	<!-- Structured data for search engines -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Rohit Ghawale",
+		"jobTitle": "Backend Lead",
+		"description": "Backend Lead specializing in distributed and high-performance systems.",
+		"url": "https://codetopolymath.github.io/portfolio/",
+		"email": "code.to.polymath@gmail.com",
+		"address": { "@type": "PostalAddress", "addressLocality": "Nagpur", "addressCountry": "India" },
+		"knowsAbout": ["Rust", "Python", "Go", "Java", "Distributed Systems", "Telecom", "High Performance Computing"],
+		"sameAs": [
+			"https://github.com/codetopolymath",
+			"https://linkedin.com/in/99-rohit-ghawale"
+		]
+	}
+	</script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-				<!-- Main -->
-					<div id="main">
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="Introduction Image" loading="lazy" /></span>
-								<p> 
-									Hi there, let me introduce myself. I'm a passionate backend developer who loves nothing more than creating efficient and scalable systems that solve complex problems. My strong foundation in Python and intermediate knowledge of Linux and scripting allow me to approach every project with a unique perspective, finding the best solution for the task at hand.
+	<!-- Header / Nav -->
+	<header class="site-header" id="top">
+		<div class="container nav-inner">
+			<a class="brand" href="#top" aria-label="Home">
+				<span class="brand-mark">&lt;/&gt;</span>
+				<span class="brand-name">Rohit Ghawale</span>
+			</a>
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+				<span></span><span></span><span></span>
+			</button>
+			<nav class="nav" id="nav" aria-label="Primary">
+				<a href="#work">What I Do</a>
+				<a href="#notable">Work</a>
+				<a href="#stack">Stack</a>
+				<a href="#projects">Projects</a>
+				<a href="#experience">Experience</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
 
-									But that's not all. I'm also skilled in database schema design and system designing at both low and high levels. And I'm well-versed in object-oriented programming, API design, and web development. In fact, I've even got experience in blockchain development and exposure to relevant languages like Solidity, Vyper, and Pact. That means I can create secure and peer-to-peer file transactions on both private and public networks. Plus, I've got experience in machine learning and AI, which has led to the development of services based on pre-trained models.
-									
-									Through various internships and projects, I've honed my skills in version control, testing, and debugging. I'm able to design and implement efficient backend and database schemas, making me a valuable addition to any team. And with my appetite for learning and staying up-to-date with the latest technologies, I'm constantly pushing the boundaries of what's possible.
-									
-									So if you're looking for a skilled and motivated backend developer who's always ready to take on a challenge, look no further. I'm excited to bring my expertise and passion to your team.
-								</p>
-							</article>
+	<main id="main">
+		<!-- Hero -->
+		<section class="hero">
+			<div class="container">
+				<p class="eyebrow">Backend Lead · Distributed &amp; High-Performance Systems</p>
+				<h1>Hi, I'm Rohit Ghawale.<br /><span class="accent">I build systems where milliseconds matter.</span></h1>
+				<p class="lede">
+					I design high-throughput, low-latency platforms for mission-critical telecom and distributed
+					systems — the kind where a few milliseconds and a fraction of a percent of uptime actually
+					matter. I came to software from <strong>Chemical Engineering</strong>, and that systems-thinking
+					mindset still shapes how I design for scale and reliability.
+				</p>
+				<p class="tagline">&ldquo;From molecules to microservices — engineering solutions that matter.&rdquo;</p>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<div class="portfolio-links">
-									<a href="https://codetopolymath.github.io/portfolio-cyberpunkstyle/code.to.polymath/home.html" class="button small portfolio-btn">Portfolio 1</a>
-									<a href="https://my-cage-bbd3e.stackbit.app/" class="button small portfolio-btn">Portfolio 2</a>
-								</div>
-								 
-								<span class="image main"><img src="images/pic02.jpg" alt="Work Experience Image" loading="lazy" /></span>
-								<p><b>Junior Software Developer Engineer at SimplicityLabs/Verifier.Official</b><p>
-								<ul class="Lists">
-									<li>Duration: 07/2022 to current</li>
-									<li>Location: Gurugram, Delhi</li>
-								</ul>
-								<p>
-									During my time at SimplicityLabs/Verifier.Official, I have been exposed to blockchain development and relevant languages such as Solidity, Vyper, and Pact. I have also gained intermediate knowledge of Linux and its systems. In addition to that, I have worked on improving the maintenance and evaluation of APIs through the use of POSTMAN, and have designed and implemented efficient backend and database schema. I have investigated, designed, and implemented scalable solutions for software development, and have cooperated diligently with other IT team members to plan, design, and develop smart solutions. I have also worked on front-end languages such as HTML, CSS, JavaScript, and frameworks such as Angular. During my time at SimplicityLabs/Verifier.Official, I have also developed a private cluster based file sharing network on top of IPFS and designed both high-level design and low-level design for backend application and system.
-								</p>
+				<ul class="lang-chips" aria-label="Primary languages">
+					<li>Rust</li><li>Python</li><li>Go</li><li>Java</li>
+				</ul>
 
-								<p><b>Intern at Internship Studio</b></p>
-								<ul class="Lists">
-									<li>Duration: 02/2022 to 07/2022</li>
-									<li>Location: Online</li>
-								</ul>
-								<p>
-								During my internship at Internship Studio, I completed three internships over a six-month period. In my first internship, I focused on Data Structures and Algorithms, where I gained practical experience in analyzing and implementing efficient algorithms and data structures to solve complex problems. In my second internship, I worked on Cybersecurity, where I developed skills in identifying and mitigating security threats and vulnerabilities in computer systems and networks. In my third internship, I focused on Machine Learning, where I delved into different models, techniques, and tools for data analysis and prediction and implemented algorithms for specific applications.
-								</p>
-							</article>
-						
-						<!-- Project -->
-						<article id="project">
-							<h2 class="major">professional project</h2>
-							<span class="image main"><img src="images/simplicityLogo.png" alt="Simplicity Labs Logo" loading="lazy" /></span>
-							<p> 
-								<h4>TRANSPARENCY - sole backend developer</h4>
-								<h5>Revolutionizing Messaging in India: The Ultimate Anti-Spam Solution</h5>
-									<ul>
-										<li>Designed and implemented a robust and scalable database schema to handle large volumes of messaging data while ensuring data privacy and security.</li>
-										<li>Developed algorithms and data structures to efficiently detect and prevent spam and abuse in the messaging system.</li>
-										<li>Worked closely with the front-end team to ensure seamless integration of the backend APIs with the user interface.</li>
-										<li>Implemented unit tests and integration tests to ensure high code quality and prevent regressions.</li>
-										<li>Worked with stakeholders to gather requirements, provide technical guidance, and ensure timely delivery of features.</li>
-										<li>Maintained a thorough understanding of the latest industry trends and best practices in backend development, messaging systems, and DLT technologies.</li>
-										<li>Actively contributed to the development of technical documentation and provided support to other team members as needed.</li>
-										<li>Demonstrated strong problem-solving skills and an ability to work independently to deliver high-quality results within tight deadlines.</li>
-									</ul>
-								<h4>CPAAS -  backend developer</h4>
-									<h5>Communication platform as a service: one time solution to all Communication needs</h5>
-										<ul>
-											<li>developed complete module for sending SMS over SMPP protocol [sole developer]</li>
-											<li>Developed a fully functional SMPP client and server module for SMS communication within a tight deadline of 3 days [sole developer]</li>
-											<li>created SMSGateway for managing SMS flow [sole developer]</li>
-											<li>Created an advanced voice module with Asterisk, incorporating essential features such as IVR, CDR, voicemail, and flow builder</li>
-											<li>Implemented a comprehensive solution that seamlessly integrated with the existing communication platform, enhancing its capabilities and user experience</li>
-										</ul>
-								<h4>DOCUR - sole backend developer</h4>
-								<h5>Secure, Decentralized Platform for Collaborative File Sharing</h5>
-									<ul>
-										<li>Utilized cutting-edge IPFS technologies to develop a secure, decentralized platform for collaborative file sharing</li>
-										<li>Created a customized CLI module with innovative features to enhance user experience and efficiency</li>
-										<li>Implemented a cluster-based file storage system that allows for easy scalability and efficient data management</li>
-										<li>Developed a node-based sharing platform that facilitates secure and collaborative file sharing among peers</li>
-										<li>Designed, developed, and documented APIs using FastAPI and Django frameworks to ensure seamless integration with front-end applications</li>
-									</ul>
-								<h4>CHAINRY</h4>
-								<h5>Unleash the Full Potential of Web3 with Our All-in-One Platform Solution</h5>
-									<ul>
-										<li>Developed a comprehensive, one-stop solution for all web3 application development needs</li>
-										<li>Designed and documented APIs to ensure seamless integration with front-end applications</li>
-										<li>Conducted end-to-end development of smart contract APIs to facilitate secure and transparent execution of transactions</li>
-										<li>Maintained up-to-date knowledge of the latest industry trends and best practices in web3 development</li>
-										<li>Collaborated with stakeholders to gather requirements and provide technical guidance, resulting in timely delivery of features</li>
-										<li>Conducted thorough testing to ensure high code quality and prevent security vulnerabilities</li>
-										<li>Implemented advanced security measures to ensure data privacy and prevent unauthorized access</li>
-										<li>Demonstrated strong problem-solving skills and an ability to work independently to deliver high-quality results within tight deadlines</li>
-									</ul>
-								<h4><a class="neon-effect" href="http://braands.io/">BRAANDS</a></h4>
-								<h5>discover, collect and share fractional NFT</h5>
-									<ul>
-										<li>an innovative platform for discovering, collecting, and sharing fractional NFTs</li>
-										<li>Conducted basic vulnerability tests to identify potential security weaknesses in the application</li>
-										<li>Proposed effective solutions to mitigate any potential security risks and ensure the safety and privacy of user data</li>
-										<li>Designed and implemented robust security measures to prevent unauthorized access and protect user privacy</li>
-										<li>Maintained up-to-date knowledge of the latest industry trends and best practices in NFT development</li>
+				<div class="cta-row">
+					<a class="btn btn-primary" href="mailto:code.to.polymath@gmail.com">Get in touch</a>
+					<a class="btn" href="images/resume.pdf" download>Download résumé</a>
+					<a class="btn btn-ghost" href="https://github.com/codetopolymath" target="_blank" rel="noopener">GitHub</a>
+				</div>
 
-									</ul>
-							<h2 class="major">personal project</h2>
-							<h3>Web Development - Frontend</h3>
-								<h4><a href="https://github.com/codetopolymath/threejs.git/">Three.js</a></h4>
-									<h5>threejs journey</h5>
-									<ul>
-										<li>Designed and implemented interactive 3D graphics using the Three.js library.</li>
-										<li>Developed animations, visual effects, and custom model rendering using WebGL.</li>
-										<li>Created a variety of projects, including interactive visualizations to showcase Three.js capabilities.</li>
-										<li>Continued to build upon and improve Three.js skills through ongoing learning and project development.</li>
-									</ul>
-								<h4><a href="https://codetopolymath.github.io/portfolio-cyberpunkstyle/code.to.polymath/home.html">portfolio-cyberpunkstyle</h4>
-									<h5>Cyberpunk Style Portfolio Website</h5>
-									<ul>
-										<li>Cloned and adapted the design from the <a href="https://tetsuo.qodeinteractive.com/"><b>Tetsuo website</b><a></li>
-										<li>Developed a unique and visually striking cyberpunk-theme portfolio website</li>
-										<li>Implemented HTML, CSS, and JavaScript to create a responsive and interactive user interface</li>
-										<li>Optimized the website for fast loading and smooth performance</li>
-										<li>Deployed the website to a github pages and made it publicly accessible</li>
-									</ul>
-								<h4><a href="https://my-cage-bbd3e.stackbit.app/">portfolio-stackbits</a></h4>
-									<h5>first website developed using no-code</h5>
-									<ul>
-										<li>Designed and developed using the Stackbit development kit</li>
-										<li>Integrated with popular headless CMS platforms like Contentful and Sanity.io</li>
-										<li>Customized the website with unique design elements and animations</li>
-									</ul> 
-							<h3>web development - backend</h3>
-								<h4><a href="https://github.com/codetopolymath/system_design.git">System Design</a></h4>
-								<h5>notes on my journey to system design</h5>
-									<ul>
-										<li>Studied various system design patterns and best practices, including scalability, availability, and fault tolerance.</li>
-										<li>Researched different database technologies and their use cases, such as SQL and NoSQL databases.</li>
-										<li>Explored different architectural styles, including microservices and serverless architectures.</li>
-										<li>Experimented with designing and implementing simple systems using various technologies, such as Node.js and Python.</li>
-										<li>Collaborated with peers to review and discuss system design concepts and implementation approaches.</li>
-									</ul>	
-							    <h4>URL Shortner [ongoing]</h4>
-								<h5>shorten your URL</h5>
-									<ul>
-										<li>tested the application of basic vulnerability tests</li>
-										<li>proposed solution to tackle or face such loopholes in application</li>
-										<li>integrated with various URL shortening services such as Bitly and TinyURL</li>
-										<li>implemented custom URL shortening algorithm</li>
-										<li>designed and developed RESTful API using Flask framework</li>
-										<li>implemented user authentication and authorization for API access</li>
-										<li>implemented rate limiting and throttling to prevent abuse of API</li>
-									</ul>
-								<h4>Web Scrapping Tools [ongoing]</h4>
-								<h5>web scrapping tool kit</h5>
-									<ul>
-										<li>Developed a web scraping tool using Python and popular libraries such as BeautifulSoup and Scrapy</li>
-										<li>Used various storage options such as CSV, JSON, and databases to store the scraped data</li>
-										<li>Implemented advanced techniques such as IP rotation, CAPTCHA bypass, and browser emulation to avoid IP bans and prevent being blocked by websites</li>
-									</ul>
-								<h4><a href="https://github.com/codetopolymath/JarvisAssistance">Jarvis Assistance</a></h4>
-								<h5>Unleashing the Power of Python: Building a Jarvis-like Virtual Assistant for Maximum Efficiency</h5>
-									<ul>
-										<li>Developed a voice-activated personal assistant similar to Jarvis, the fictional AI from the Iron Man series, using Python and various APIs</li>
-										<li>Utilized speech recognition libraries such as PyAudio and SpeechRecognition to convert voice commands into text inputs</li>
-										<li>Implemented natural language processing (NLP) techniques such as keyword extraction and entity recognition to understand user intents and respond appropriately</li>
-										<li>Utilized text-to-speech libraries such as pyttsx3 to enable the bot to respond vocally to user requests</li>
-										<li>Customized the bot's responses and functionalities according to user preferences</li>
-									</ul>
-							<h3>machine learning and artificial inteligence</h3>
-								<h4><a href="https://github.com/codetopolymath/machine_learning_challenges.git">shell.ai EV challenge</a></h4>
-								<h5>Accelerating Towards an Electric Future: Successfully Completing the Shell AI EV Challenge with Innovative Solutions</h5>
-									<ul>
-										<li>Shell.ai EV Grid Challenge, a competition that aimed to optimize the management of electric vehicle charging stations using advanced data analytics and machine learning techniques</li>
-										<li>Utilized Python, pandas, and other data analysis libraries to explore and analyze the provided datasets of EV charging stations and electricity demand</li>
-										<li>Utilized visualization tools such as Matplotlib and Tableau to showcase insights and results</li>
-									</ul>
-								<h4><a href="https://github.com/codetopolymath">Image To Question Transformer</a></h4>
-								<h5>Unlocking Image Intelligence: AI and ML-Based Image-to-Question Generation for Deeper Understanding</h5>
-									<ul>
-										<li>Utilizes state-of-the-art ML and AI techniques to analyze and extract text from images in a variety of formats and languages</li>
-										<li>Offers customizable question generation based on the extracted text, with the option to choose between boolean and multiple-choice formats</li>
-										<li>Offers seamless integration with other applications and services, allowing for easy sharing and collaboration on image-based projects</li>
-									</ul>
-								<h4><a href="https://github.com/codetopolymath">Speech To Text Summarization Transformer</a></h4>
-								<h5>Transforming Speech to Actionable Insights: AI-Powered Summarization for Efficient Communication</h5>
-									<ul>
-										<li>Uses advanced speech recognition technology to transcribe spoken language into text, with high accuracy and minimal errors</li>
-										<li>Utilizes machine learning algorithms to analyze and summarize the extracted text into concise and coherent summaries</li>
-										<li>Offers customizable summarization options, allowing users to specify the length and level of detail of the summary</li>
-									</ul>
-							<h3>blockchain development</h3>
-								<h4><a href="https://github.com/codetopolymath/blockchain_development.git">Blockchain Development</a></h4>
-								<h5>Embarking on a Decentralized Future: Our Journey in Blockchain Development</h5>
-									<ul>
-										<li>Created application binaries for Kuro-Pact, a programming language for creating smart contracts that offers enhanced security features such as automated formal verification and static analysis</li>
-										<li>Designed and developed decentralized blockchain applications using technologies such as Ethereum, Hyperledger Fabric</li>
-										<li>Implemented smart contracts in Solidity and other languages to automate business processes and enable secure transactions</li>
-										<li>Utilized various consensus algorithms such as Proof of Work (PoW) and Proof of Stake (PoS) to ensure network security and integrity</li>
-										<li>Utilized tools such as Remix, Ganache, and Truffle Suite to test and deploy smart contracts and decentralized applications</li>
-									</ul>
-								<h4>hyperledger fabric</h4>
-								<h5>Building Next-Generation Business Networks with Hyperledger Fabric: Powering Secure and Scalable Enterprise Blockchain Solutions</h5>
-									<ul>
-										<li>Designed and developed enterprise blockchain solutions using Hyperledger Fabric, a permissioned blockchain platform for demo</li>
-										<li>Implemented smart contracts in Chaincode, Fabric's native programming language, to automate business processes and enable secure transactions</li>
-										<li>Implemented security measures such as certificate authorities (CA) and encryption to ensure network security and integrity</li>
-									</ul>
-								<h4>smart contracts</h4>
-								<h5>Revolutionizing Business Transactions: Leveraging Smart Contract Development to Enable Secure and Automated Interactions</h5>
-									<ul>
-										<li>Designed and developed smart contracts using Solidity, the most popular programming language for creating Ethereum-based smart contracts, and Vyper, a newer language designed for enhanced security</li>
-										<li>Utilized smart contracts to automate business processes and enable secure and transparent transactions in various industries such as supply chain management and digital identity</li>
-									</ul>
-							</p>
-						</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="About Me Image" loading="lazy" /></span>
-								<h4>Education</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>QUALIFICATION</th>
-													<th>NAME</th>
-													<th>GRADE</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>B Tech.</td>
-													<td><a href="https://docs.google.com/document/d/1asTtJXeCPx1Id94O_2tEjRUlXn8dnhQ3xBr9HE-rD-8/edit?usp=sharing">Batchlor Of Technology In Chemical Engineering</a></td>
-													<td>A++ Grade</td>
-												</tr>
-												<tr>
-													<td> HSC </td>
-													<td>Higher Secondary School Certificate</td>
-													<td>81.80 %</td>
-												</tr>
-												<tr>
-													<td>SSC</td>
-													<td> Secondary School Certificate</td>
-													<td>83.60 %</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-
-								<h4>skills and achievements</h4>
-									<ul>
-										<li>Designed and implemented a <b>secure messaging system</b> that <b>passed by TRAI</b></li>
-										<li>Developed foundation for communication module over SMPP protocol</li>
-										<li><b>Proficient in Python</b>, introductory knowledge of Vyper, Golang, Typescript, Solidity</li>
-										<li>Skilled in <b>database technologies</b> such as <b>SQL(MySQL, PSQL)</b> and <b>NoSQL(Cassendra, MongoDB)</b></li>
-										<li>Experience in using <b>version control tools</b> like Git</li>
-										<li>Familiar with <b>introductory-level DevOps technologies</b> such as CI/CD, configuration management, containerization, and IaC</li>
-										<li>Proficient in utilizing <b>Docker for development-related tasks</b> such as building, testing, and deploying software applications in a containerized environment</li>
-										<li><b>Experienced in web development technologies</b> such as HTML, CSS, and JavaScript and frameworks like <b>Angular</b></li>
-									</ul>
-								
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="https://fabform.io/f/juI_E-x">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="https://codetopolymath.github.io/portfolio-cyberpunkstyle/code.to.polymath/home.html" class="icon fa-dropbox"><span class="label">cyberpunk</span></a></li>
-									<li><a href="https://www.linkedin.com/in/99-rohit-ghawale/" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
-									<li><a href="" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/codetopolymath" class="icon fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-							<!-- timeline -->
-						<article id="timeline">
-							<h4>completed 3 internship from <a href="https://internshipstudio.com/">internship Studio</a> [april 2023]</h4>
-							<ul>
-								<li>machine learning</li>
-								<li>C++ data structure and algorithm</li>
-								<li>Cybersecurity</li>	
-							</ul>
-							<h4>starting first job at <a href="https://www.simplicitylabs.org/">@simplicitylabs</a> [july 1 2022]</h4>
-							<h4>starting learning DSA [may 1 2023]</h4>
-						</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<b><p class="copyright">&copy; code_to_polymath ---> <a href="mailto: code.to.polymath@gmail.com">SPAM ME</a></p></b>
-					</footer>
-
+				<p class="location" aria-label="Location">
+					<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+					Nagpur, India
+				</p>
 			</div>
+		</section>
 
-		<!-- BG -->
-			<div id="bg"></div>
+		<!-- Metrics strip -->
+		<section class="metrics" aria-label="Impact at a glance">
+			<div class="container metrics-grid">
+				<div class="metric"><span class="metric-num">150K</span><span class="metric-label">TPS sustained</span></div>
+				<div class="metric"><span class="metric-num">10M+</span><span class="metric-label">daily transactions</span></div>
+				<div class="metric"><span class="metric-num">99.9%</span><span class="metric-label">uptime</span></div>
+				<div class="metric"><span class="metric-num">~10×</span><span class="metric-label">latency cut (Rust)</span></div>
+				<div class="metric"><span class="metric-num">40%</span><span class="metric-label">lower infra cost</span></div>
+				<div class="metric"><span class="metric-num">1B+</span><span class="metric-label">records, sub-sec queries</span></div>
+			</div>
+		</section>
 
-		<!-- Scripts - optimized with defer for better loading performance -->
-			<script src="assets/js/jquery.min.js" defer></script>
-			<script src="assets/js/browser.min.js" defer></script>
-			<script src="assets/js/breakpoints.min.js" defer></script>
-			<script src="assets/js/util.js" defer></script>
-			<script src="assets/js/main.js" defer></script>
+		<!-- What I Do -->
+		<section id="work" class="section">
+			<div class="container">
+				<h2 class="section-title"><span class="hash">#</span> What I Do</h2>
+				<p class="section-intro">I specialize in <strong>high-throughput, sub-millisecond systems</strong> under real production load.</p>
+				<ul class="do-list">
+					<li><span class="do-icon">🔥</span> Built and scaled a telecom SMS/OTP platform to <strong>150K TPS</strong> serving <strong>10M+ daily transactions</strong> at <strong>99.9% uptime</strong>.</li>
+					<li><span class="do-icon">🦀</span> Led a <strong>Python → Rust migration</strong> that cut response latency from ~50ms to <strong>&lt;5ms</strong> and infrastructure costs by <strong>40%</strong>.</li>
+					<li><span class="do-icon">🏗️</span> Architected event-driven microservices on <strong>Axum/Tokio</strong>, deployed across <strong>20 servers</strong> with zero-downtime rollouts.</li>
+					<li><span class="do-icon">📊</span> Tuned <strong>PostgreSQL, ClickHouse &amp; DragonflyDB</strong> to cut query latency <strong>70%</strong>, enabling real-time analytics on <strong>1B+ records</strong>.</li>
+					<li><span class="do-icon">🧭</span> Led an <strong>8-person cross-functional team</strong> and served as SPOC for telecom operators, aggregators, and enterprise clients.</li>
+				</ul>
+			</div>
+		</section>
 
-	</body>
+		<!-- Notable Work -->
+		<section id="notable" class="section section-alt">
+			<div class="container">
+				<h2 class="section-title"><span class="hash">#</span> Notable Work</h2>
+				<div class="cards">
+					<article class="card">
+						<h3>Telecom Platform Engineering <span class="tag">CPAAS</span></h3>
+						<p>SMS/OTP routing systems processing millions of messages daily — SMPP protocol handling, event-driven delivery-receipt pipelines on Kafka (<strong>500K DLRs/hour</strong>), and real-time analytics on <strong>1B+ records</strong> with sub-second queries.</p>
+						<ul class="card-meta">
+							<li>SMPP</li><li>Kafka</li><li>ClickHouse</li><li>Rust · Axum</li>
+						</ul>
+					</article>
+					<article class="card">
+						<h3>Performance Optimization</h3>
+						<p>Drove a Python → Rust migration cutting latency <strong>~10×</strong> and infra costs <strong>40%</strong>, plus database tuning across connection-pooled PostgreSQL, batched ClickHouse writes, and DragonflyDB for <strong>70%</strong> lower query latency.</p>
+						<ul class="card-meta">
+							<li>Rust</li><li>Tokio</li><li>PostgreSQL</li><li>DragonflyDB</li>
+						</ul>
+					</article>
+					<article class="card">
+						<h3>Distributed Systems &amp; Reliability</h3>
+						<p>Zero-downtime deployments with automated rollback across 20-server clusters, HAProxy load balancing with health checks, BBR congestion control for <strong>&lt;2ms</strong> internal latency, and an observability stack tracking <strong>50+ metrics</strong> end to end.</p>
+						<ul class="card-meta">
+							<li>Docker Swarm</li><li>HAProxy</li><li>Prometheus</li><li>Grafana</li>
+						</ul>
+					</article>
+					<article class="card">
+						<h3>Fraud Prevention &amp; Platforms <span class="tag tag-muted">earlier work</span></h3>
+						<p><strong>TRANSPARENCY</strong> — a TRAI-approved fraud-prevention system processing <strong>50K+ verifications/day</strong> at <strong>99.99% uptime</strong> (Django REST + React). Plus <strong>DOCUR</strong>, a decentralized file-sharing platform on FastAPI + IPFS that cut storage costs <strong>80%</strong>.</p>
+						<ul class="card-meta">
+							<li>Django</li><li>React</li><li>FastAPI</li><li>IPFS</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- Tech Stack -->
+		<section id="stack" class="section">
+			<div class="container">
+				<h2 class="section-title"><span class="hash">#</span> Tech Stack</h2>
+				<div class="stack-grid">
+					<div class="stack-group">
+						<h4>Languages</h4>
+						<ul><li>Rust</li><li>Python</li><li>Go</li><li>JavaScript</li><li>Java</li></ul>
+					</div>
+					<div class="stack-group">
+						<h4>Backend &amp; Frameworks</h4>
+						<ul><li>Axum</li><li>Tokio</li><li>FastAPI</li><li>Django</li><li>Spring Boot</li><li>React</li></ul>
+					</div>
+					<div class="stack-group">
+						<h4>Data &amp; Messaging</h4>
+						<ul><li>PostgreSQL</li><li>ClickHouse</li><li>Redis / Dragonfly</li><li>MongoDB</li><li>Kafka</li></ul>
+					</div>
+					<div class="stack-group">
+						<h4>Infrastructure &amp; DevOps</h4>
+						<ul><li>Docker Swarm</li><li>HAProxy</li><li>Ansible</li><li>Terraform</li><li>GitLab CI/CD</li></ul>
+					</div>
+					<div class="stack-group">
+						<h4>Cloud &amp; Observability</h4>
+						<ul><li>AWS</li><li>GCP</li><li>Prometheus</li><li>Grafana</li><li>k6</li></ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Side Projects -->
+		<section id="projects" class="section section-alt">
+			<div class="container">
+				<h2 class="section-title"><span class="hash">#</span> Side Projects &amp; Open Source</h2>
+				<div class="cards cards-3">
+					<article class="card card-sm">
+						<h3>Rust Migration Framework</h3>
+						<p>Open-source patterns for FastAPI → Axum migrations — async I/O, error handling, and DB pooling.</p>
+					</article>
+					<article class="card card-sm">
+						<h3>LazyVim Config</h3>
+						<p>Neovim setup tuned for polyglot work (Rust / Python / Go / JS) with LSP, debugging &amp; Git integration.</p>
+					</article>
+					<article class="card card-sm">
+						<h3>MEV Arbitrage Bots</h3>
+						<p>Cosmos SDK trading systems for DEX arbitrage with a backtesting framework.</p>
+					</article>
+					<article class="card card-sm">
+						<h3>AI / ML Experiments</h3>
+						<p>LangChain + vector DB document Q&amp;A using RAG patterns.</p>
+					</article>
+				</div>
+				<p class="repo-note">Most production work lives in private/organizational repositories. More on <a href="https://github.com/codetopolymath" target="_blank" rel="noopener">GitHub →</a></p>
+			</div>
+		</section>
+
+		<!-- Experience / Education -->
+		<section id="experience" class="section">
+			<div class="container">
+				<h2 class="section-title"><span class="hash">#</span> Experience &amp; Education</h2>
+				<div class="timeline">
+					<div class="tl-item">
+						<div class="tl-dot"></div>
+						<div class="tl-body">
+							<h3>Backend Lead — SimplicityLabs / Verifier.Official</h3>
+							<p class="tl-date">Jul 2022 – Present · Remote / Gurugram, India</p>
+							<p>Lead backend for high-throughput telecom and distributed platforms — owning architecture, the Python→Rust migration, database performance, and zero-downtime delivery. SPOC for telecom operators, aggregators, and enterprise clients; led an 8-person cross-functional team.</p>
+						</div>
+					</div>
+					<div class="tl-item">
+						<div class="tl-dot"></div>
+						<div class="tl-body">
+							<h3>Internships — Internship Studio</h3>
+							<p class="tl-date">Feb 2022 – Jul 2022 · Remote</p>
+							<p>Three focused tracks: Data Structures &amp; Algorithms, Cybersecurity, and Machine Learning.</p>
+						</div>
+					</div>
+					<div class="tl-item">
+						<div class="tl-dot"></div>
+						<div class="tl-body">
+							<h3>B.Tech, Chemical Engineering</h3>
+							<p class="tl-date">A++ grade</p>
+							<p>A systems-thinking foundation — process design, throughput, and reliability — that carried directly into how I architect software for scale.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section id="contact" class="section section-alt">
+			<div class="container contact-inner">
+				<h2 class="section-title"><span class="hash">#</span> Let's Connect</h2>
+				<p class="section-intro">Open to interesting conversations about backend, performance, and distributed systems.</p>
+
+				<div class="contact-grid">
+					<form class="contact-form" method="post" action="https://fabform.io/f/juI_E-x">
+						<div class="field">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" required />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" required />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Send message</button>
+					</form>
+
+					<ul class="contact-links">
+						<li>
+							<a href="mailto:code.to.polymath@gmail.com">
+								<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
+								code.to.polymath@gmail.com
+							</a>
+						</li>
+						<li>
+							<a href="https://linkedin.com/in/99-rohit-ghawale" target="_blank" rel="noopener">
+								<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.34 18.34V9.96H5.66v8.38h2.68ZM7 8.78a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1Zm11.34 9.56v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.4 1.32h-.03V9.96h-2.68v8.38h2.68v-4.15c0-1.1.2-2.16 1.56-2.16 1.34 0 1.36 1.25 1.36 2.23v4.08h2.61Z"/></svg>
+								LinkedIn
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/codetopolymath" target="_blank" rel="noopener">
+								<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+								github.com/codetopolymath
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; <span id="year"></span> Rohit Ghawale · Built with plain HTML &amp; CSS · Hosted on GitHub Pages</p>
+		</div>
+	</footer>
+
+	<script src="script.js" defer></script>
+</body>
 </html>
