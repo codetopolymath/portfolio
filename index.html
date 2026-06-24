@@ -9,19 +9,26 @@
 	<meta name="author" content="Rohit Ghawale" />
 	<link rel="canonical" href="https://codetopolymath.github.io/portfolio/" />
 
+	<!-- Icons -->
+	<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
 	<!-- Open Graph / social preview -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Rohit Ghawale — Backend Lead · Distributed & High-Performance Systems" />
 	<meta property="og:description" content="High-throughput, sub-millisecond systems for mission-critical telecom & distributed platforms. Rust · Python · Go · Java." />
 	<meta property="og:url" content="https://codetopolymath.github.io/portfolio/" />
+	<meta property="og:image" content="https://codetopolymath.github.io/portfolio/assets/og.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="Rohit Ghawale — Backend Lead · Distributed & High-Performance Systems" />
 	<meta name="twitter:description" content="High-throughput, sub-millisecond systems for mission-critical telecom & distributed platforms." />
+	<meta name="twitter:image" content="https://codetopolymath.github.io/portfolio/assets/og.png" />
 
 	<meta name="theme-color" content="#1a1b26" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800;900&display=swap" />
 	<link rel="stylesheet" href="style.css" />
 
 	<!-- Structured data for search engines -->
@@ -62,7 +69,7 @@
 				<a href="#stack">Stack</a>
 				<a href="#projects">Projects</a>
 				<a href="#experience">Experience</a>
-				<a href="#contact">Contact</a>
+				<a class="nav-cta" href="#contact">Contact</a>
 			</nav>
 		</div>
 	</header>
@@ -70,88 +77,115 @@
 	<main id="main">
 		<!-- Hero -->
 		<section class="hero">
-			<div class="container">
-				<p class="eyebrow">Backend Lead · Distributed &amp; High-Performance Systems</p>
-				<h1>Hi, I'm Rohit Ghawale.<br /><span class="accent">I build systems where milliseconds matter.</span></h1>
+			<div class="hero-bg" aria-hidden="true">
+				<div class="blob blob-1"></div>
+				<div class="blob blob-2"></div>
+				<div class="grid-overlay"></div>
+			</div>
+			<div class="container hero-inner">
+				<p class="eyebrow">// Backend Lead · Distributed &amp; High-Performance Systems</p>
+				<h1>I build systems where<br /><span class="accent">milliseconds matter.</span></h1>
 				<p class="lede">
-					I design high-throughput, low-latency platforms for mission-critical telecom and distributed
-					systems — the kind where a few milliseconds and a fraction of a percent of uptime actually
-					matter. I came to software from <strong>Chemical Engineering</strong>, and that systems-thinking
+					High-throughput, low-latency platforms for mission-critical telecom and distributed
+					systems — where a few milliseconds and a fraction of a percent of uptime actually matter.
+					I came to software from <strong>Chemical Engineering</strong>, and that systems-thinking
 					mindset still shapes how I design for scale and reliability.
 				</p>
-				<p class="tagline">&ldquo;From molecules to microservices — engineering solutions that matter.&rdquo;</p>
 
-				<ul class="lang-chips" aria-label="Primary languages">
-					<li>Rust</li><li>Python</li><li>Go</li><li>Java</li>
-				</ul>
+				<p class="status"><span class="status-dot"></span> Currently building at <strong>Pinnacle Teleservices</strong> · Nagpur, India</p>
 
 				<div class="cta-row">
-					<a class="btn btn-primary" href="mailto:code.to.polymath@gmail.com">Get in touch</a>
+					<a class="btn btn-primary" href="mailto:code.to.polymath@gmail.com">
+						<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
+						Email me
+					</a>
 					<a class="btn" href="images/resume.pdf" download>Download résumé</a>
 					<a class="btn btn-ghost" href="https://github.com/codetopolymath" target="_blank" rel="noopener">GitHub</a>
 				</div>
 
-				<p class="location" aria-label="Location">
-					<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
-					Nagpur, India
-				</p>
+				<ul class="lang-chips" aria-label="Primary languages">
+					<li>Rust</li><li>Python</li><li>Go</li><li>Java</li>
+				</ul>
 			</div>
+			<a class="scroll-hint" href="#metrics" aria-label="Scroll down">
+				<span></span>
+			</a>
 		</section>
 
 		<!-- Metrics strip -->
-		<section class="metrics" aria-label="Impact at a glance">
+		<section class="metrics" id="metrics" aria-label="Impact at a glance">
 			<div class="container metrics-grid">
-				<div class="metric"><span class="metric-num">150K</span><span class="metric-label">TPS sustained</span></div>
-				<div class="metric"><span class="metric-num">10M+</span><span class="metric-label">daily transactions</span></div>
-				<div class="metric"><span class="metric-num">99.9%</span><span class="metric-label">uptime</span></div>
-				<div class="metric"><span class="metric-num">~10×</span><span class="metric-label">latency cut (Rust)</span></div>
-				<div class="metric"><span class="metric-num">40%</span><span class="metric-label">lower infra cost</span></div>
-				<div class="metric"><span class="metric-num">1B+</span><span class="metric-label">records, sub-sec queries</span></div>
+				<div class="metric reveal"><span class="metric-num" data-count-to="150" data-suffix="K">0</span><span class="metric-label">TPS sustained</span></div>
+				<div class="metric reveal"><span class="metric-num" data-count-to="10" data-suffix="M+">0</span><span class="metric-label">daily transactions</span></div>
+				<div class="metric reveal"><span class="metric-num" data-count-to="99.9" data-decimals="1" data-suffix="%">0</span><span class="metric-label">uptime</span></div>
+				<div class="metric reveal"><span class="metric-num" data-count-to="10" data-prefix="~" data-suffix="×">0</span><span class="metric-label">latency cut (Rust)</span></div>
+				<div class="metric reveal"><span class="metric-num" data-count-to="40" data-suffix="%">0</span><span class="metric-label">lower infra cost</span></div>
+				<div class="metric reveal"><span class="metric-num" data-count-to="1" data-suffix="B+">0</span><span class="metric-label">records, sub-sec queries</span></div>
 			</div>
 		</section>
 
 		<!-- What I Do -->
 		<section id="work" class="section">
 			<div class="container">
-				<h2 class="section-title"><span class="hash">#</span> What I Do</h2>
-				<p class="section-intro">I specialize in <strong>high-throughput, sub-millisecond systems</strong> under real production load.</p>
-				<ul class="do-list">
-					<li><span class="do-icon">🔥</span> Built and scaled a telecom SMS/OTP platform to <strong>150K TPS</strong> serving <strong>10M+ daily transactions</strong> at <strong>99.9% uptime</strong>.</li>
-					<li><span class="do-icon">🦀</span> Led a <strong>Python → Rust migration</strong> that cut response latency from ~50ms to <strong>&lt;5ms</strong> and infrastructure costs by <strong>40%</strong>.</li>
-					<li><span class="do-icon">🏗️</span> Architected event-driven microservices on <strong>Axum/Tokio</strong>, deployed across <strong>20 servers</strong> with zero-downtime rollouts.</li>
-					<li><span class="do-icon">📊</span> Tuned <strong>PostgreSQL, ClickHouse &amp; DragonflyDB</strong> to cut query latency <strong>70%</strong>, enabling real-time analytics on <strong>1B+ records</strong>.</li>
-					<li><span class="do-icon">🧭</span> Led an <strong>8-person cross-functional team</strong> and served as SPOC for telecom operators, aggregators, and enterprise clients.</li>
-				</ul>
+				<h2 class="section-title reveal"><span class="hash">#</span> What I Do</h2>
+				<p class="section-intro reveal">I specialize in <strong>high-throughput, sub-millisecond systems</strong> under real production load.</p>
+				<div class="pillars">
+					<article class="pillar reveal">
+						<span class="pillar-icon">🔥</span>
+						<h3>Scale under load</h3>
+						<p>Built and scaled a telecom SMS/OTP platform to <strong>150K TPS</strong> serving <strong>10M+ daily transactions</strong> at <strong>99.9% uptime</strong>.</p>
+					</article>
+					<article class="pillar reveal">
+						<span class="pillar-icon">🦀</span>
+						<h3>Performance migrations</h3>
+						<p>Led a <strong>Python → Rust migration</strong> that cut latency from ~50ms to <strong>&lt;5ms</strong> and infrastructure costs by <strong>40%</strong>.</p>
+					</article>
+					<article class="pillar reveal">
+						<span class="pillar-icon">🏗️</span>
+						<h3>Event-driven services</h3>
+						<p>Architected microservices on <strong>Axum/Tokio</strong> across <strong>20 servers</strong> with zero-downtime rollouts and automated rollback.</p>
+					</article>
+					<article class="pillar reveal">
+						<span class="pillar-icon">📊</span>
+						<h3>Data at scale</h3>
+						<p>Tuned <strong>PostgreSQL, ClickHouse &amp; DragonflyDB</strong> to cut query latency <strong>70%</strong>, enabling real-time analytics on <strong>1B+ records</strong>.</p>
+					</article>
+					<article class="pillar reveal">
+						<span class="pillar-icon">🧭</span>
+						<h3>Leading teams</h3>
+						<p>Led an <strong>8-person cross-functional team</strong> and served as SPOC for telecom operators, aggregators, and enterprise clients.</p>
+					</article>
+				</div>
 			</div>
 		</section>
 
 		<!-- Notable Work -->
 		<section id="notable" class="section section-alt">
 			<div class="container">
-				<h2 class="section-title"><span class="hash">#</span> Notable Work</h2>
+				<h2 class="section-title reveal"><span class="hash">#</span> Notable Work</h2>
 				<div class="cards">
-					<article class="card">
+					<article class="card reveal">
 						<h3>Telecom Platform Engineering <span class="tag">CPAAS</span></h3>
 						<p>SMS/OTP routing systems processing millions of messages daily — SMPP protocol handling, event-driven delivery-receipt pipelines on Kafka (<strong>500K DLRs/hour</strong>), and real-time analytics on <strong>1B+ records</strong> with sub-second queries.</p>
 						<ul class="card-meta">
 							<li>SMPP</li><li>Kafka</li><li>ClickHouse</li><li>Rust · Axum</li>
 						</ul>
 					</article>
-					<article class="card">
+					<article class="card reveal">
 						<h3>Performance Optimization</h3>
 						<p>Drove a Python → Rust migration cutting latency <strong>~10×</strong> and infra costs <strong>40%</strong>, plus database tuning across connection-pooled PostgreSQL, batched ClickHouse writes, and DragonflyDB for <strong>70%</strong> lower query latency.</p>
 						<ul class="card-meta">
 							<li>Rust</li><li>Tokio</li><li>PostgreSQL</li><li>DragonflyDB</li>
 						</ul>
 					</article>
-					<article class="card">
+					<article class="card reveal">
 						<h3>Distributed Systems &amp; Reliability</h3>
 						<p>Zero-downtime deployments with automated rollback across 20-server clusters, HAProxy load balancing with health checks, BBR congestion control for <strong>&lt;2ms</strong> internal latency, and an observability stack tracking <strong>50+ metrics</strong> end to end.</p>
 						<ul class="card-meta">
 							<li>Docker Swarm</li><li>HAProxy</li><li>Prometheus</li><li>Grafana</li>
 						</ul>
 					</article>
-					<article class="card">
+					<article class="card reveal">
 						<h3>Fraud Prevention &amp; Platforms <span class="tag tag-muted">earlier work</span></h3>
 						<p><strong>TRANSPARENCY</strong> — a TRAI-approved fraud-prevention system processing <strong>50K+ verifications/day</strong> at <strong>99.99% uptime</strong> (Django REST + React). Plus <strong>DOCUR</strong>, a decentralized file-sharing platform on FastAPI + IPFS that cut storage costs <strong>80%</strong>.</p>
 						<ul class="card-meta">
@@ -165,25 +199,25 @@
 		<!-- Tech Stack -->
 		<section id="stack" class="section">
 			<div class="container">
-				<h2 class="section-title"><span class="hash">#</span> Tech Stack</h2>
+				<h2 class="section-title reveal"><span class="hash">#</span> Tech Stack</h2>
 				<div class="stack-grid">
-					<div class="stack-group">
+					<div class="stack-group reveal">
 						<h4>Languages</h4>
 						<ul><li>Rust</li><li>Python</li><li>Go</li><li>JavaScript</li><li>Java</li></ul>
 					</div>
-					<div class="stack-group">
+					<div class="stack-group reveal">
 						<h4>Backend &amp; Frameworks</h4>
 						<ul><li>Axum</li><li>Tokio</li><li>FastAPI</li><li>Django</li><li>Spring Boot</li><li>React</li></ul>
 					</div>
-					<div class="stack-group">
+					<div class="stack-group reveal">
 						<h4>Data &amp; Messaging</h4>
 						<ul><li>PostgreSQL</li><li>ClickHouse</li><li>Redis / Dragonfly</li><li>MongoDB</li><li>Kafka</li></ul>
 					</div>
-					<div class="stack-group">
+					<div class="stack-group reveal">
 						<h4>Infrastructure &amp; DevOps</h4>
 						<ul><li>Docker Swarm</li><li>HAProxy</li><li>Ansible</li><li>Terraform</li><li>GitLab CI/CD</li></ul>
 					</div>
-					<div class="stack-group">
+					<div class="stack-group reveal">
 						<h4>Cloud &amp; Observability</h4>
 						<ul><li>AWS</li><li>GCP</li><li>Prometheus</li><li>Grafana</li><li>k6</li></ul>
 					</div>
@@ -194,35 +228,35 @@
 		<!-- Side Projects -->
 		<section id="projects" class="section section-alt">
 			<div class="container">
-				<h2 class="section-title"><span class="hash">#</span> Side Projects &amp; Open Source</h2>
+				<h2 class="section-title reveal"><span class="hash">#</span> Side Projects &amp; Open Source</h2>
 				<div class="cards cards-3">
-					<article class="card card-sm">
+					<article class="card card-sm reveal">
 						<h3>Rust Migration Framework</h3>
 						<p>Open-source patterns for FastAPI → Axum migrations — async I/O, error handling, and DB pooling.</p>
 					</article>
-					<article class="card card-sm">
+					<article class="card card-sm reveal">
 						<h3>LazyVim Config</h3>
 						<p>Neovim setup tuned for polyglot work (Rust / Python / Go / JS) with LSP, debugging &amp; Git integration.</p>
 					</article>
-					<article class="card card-sm">
+					<article class="card card-sm reveal">
 						<h3>MEV Arbitrage Bots</h3>
 						<p>Cosmos SDK trading systems for DEX arbitrage with a backtesting framework.</p>
 					</article>
-					<article class="card card-sm">
+					<article class="card card-sm reveal">
 						<h3>AI / ML Experiments</h3>
 						<p>LangChain + vector DB document Q&amp;A using RAG patterns.</p>
 					</article>
 				</div>
-				<p class="repo-note">Most production work lives in private/organizational repositories. More on <a href="https://github.com/codetopolymath" target="_blank" rel="noopener">GitHub →</a></p>
+				<p class="repo-note reveal">Most production work lives in private/organizational repositories. More on <a href="https://github.com/codetopolymath" target="_blank" rel="noopener">GitHub →</a></p>
 			</div>
 		</section>
 
 		<!-- Experience / Education -->
 		<section id="experience" class="section">
 			<div class="container">
-				<h2 class="section-title"><span class="hash">#</span> Experience &amp; Education</h2>
+				<h2 class="section-title reveal"><span class="hash">#</span> Experience &amp; Education</h2>
 				<div class="timeline">
-					<div class="tl-item">
+					<div class="tl-item reveal">
 						<div class="tl-dot"></div>
 						<div class="tl-body">
 							<h3>Software Developer — Pinnacle Teleservices Pvt Ltd</h3>
@@ -230,7 +264,7 @@
 							<p>Lead backend development for mission-critical communication systems, specializing in WhatsApp Business API integration and fraud prevention. Architected and single-handedly built three backend services for the WhatsApp Business platform, cutting cloud costs <strong>~95%</strong> through efficient system design. Built event-driven, non-blocking I/O handling <strong>10,000+ messages/minute</strong>, and developed <strong>TRANSPARENCY</strong> — a real-time anti-spam solution that monitors communication hops to block fake reports and malicious URLs. APIs in Java, Python &amp; Spring Boot; led integration with telecom providers and third-party messaging platforms.</p>
 						</div>
 					</div>
-					<div class="tl-item">
+					<div class="tl-item reveal">
 						<div class="tl-dot"></div>
 						<div class="tl-body">
 							<h3>Software Developer — Pinnacle Teleservices Pvt Ltd</h3>
@@ -238,7 +272,7 @@
 							<p>Full-stack developer across blockchain, CPaaS, and decentralized systems. Built an SMPP client/server module for SMS (delivered in 3 days) and an Asterisk voice module (IVR, CDR, voicemail, flow builder). Architected <strong>DOCUR</strong>, a decentralized file-sharing platform on IPFS with cluster-based storage; <strong>CHAINRY</strong>, a web3 platform with smart-contract APIs; and <strong>BRAANDS</strong>, a fractional-NFT platform. Built with Python &amp; FastAPI.</p>
 						</div>
 					</div>
-					<div class="tl-item">
+					<div class="tl-item reveal">
 						<div class="tl-dot"></div>
 						<div class="tl-body">
 							<h3>Internships — Internship Studio</h3>
@@ -246,7 +280,7 @@
 							<p>Three focused tracks: C++ &amp; Data Structures/Algorithms, Cybersecurity (ethical hacking, network analysis, web-security testing), and Machine Learning (Python, pandas, scikit-learn).</p>
 						</div>
 					</div>
-					<div class="tl-item">
+					<div class="tl-item reveal">
 						<div class="tl-dot"></div>
 						<div class="tl-body">
 							<h3>B.Tech, Chemical Engineering</h3>
@@ -261,14 +295,17 @@
 		<!-- Contact -->
 		<section id="contact" class="section section-alt">
 			<div class="container contact-inner">
-				<h2 class="section-title"><span class="hash">#</span> Let's Connect</h2>
-				<p class="section-intro">Open to interesting conversations about backend, performance, and distributed systems. The fastest way to reach me is email.</p>
+				<h2 class="section-title reveal"><span class="hash">#</span> Let's Connect</h2>
+				<p class="section-intro reveal">Open to interesting conversations about backend, performance, and distributed systems. The fastest way to reach me is email.</p>
 
-				<div class="contact-cta">
-					<a class="btn btn-primary" href="mailto:code.to.polymath@gmail.com">Email me</a>
+				<div class="contact-cta reveal">
+					<a class="btn btn-primary" href="mailto:code.to.polymath@gmail.com">
+						<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
+						Email me
+					</a>
 				</div>
 
-				<ul class="contact-links contact-links-center">
+				<ul class="contact-links contact-links-center reveal">
 						<li>
 							<a href="mailto:code.to.polymath@gmail.com">
 								<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
