@@ -3,6 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import ModelShowcase from './components/ModelShowcase'
 import Metrics from './components/Metrics'
 import WhatIDo from './components/WhatIDo'
 import NotableWork from './components/NotableWork'
@@ -60,6 +61,7 @@ export default function App() {
       <Header />
       <main id="main">
         <Hero />
+        <ModelShowcase />
         <Metrics />
         <WhatIDo />
         <NotableWork />
