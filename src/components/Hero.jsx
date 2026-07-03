@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Button } from 'antd'
 import { gsap } from 'gsap'
+import { LANG_DOCS } from '../data/docLinks'
 
 const LANGS = ['Rust', 'Python', 'Go', 'Java', 'JavaScript']
 
@@ -144,7 +145,32 @@ export default function Hero() {
               boxShadow: '0 0 0 3px rgba(74,222,128,.2)', display: 'inline-block', flexShrink: 0,
               animation: 'statusPulse 2.2s infinite',
             }} />
-            Currently building at <strong style={{ color: 'var(--text)', marginLeft: 4 }}>Pinnacle Teleservices</strong> · Nagpur
+            Currently building at{' '}
+            <a
+              href="https://www.pinnacle.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-affordance"
+              style={{ color: 'var(--text)', fontWeight: 700, marginLeft: 4 }}
+            >
+              <img
+                src="https://www.pinnacle.in/wp-content/uploads/2022/05/logo.png"
+                alt=""
+                aria-hidden="true"
+                style={{ height: 14, width: 'auto', objectFit: 'contain' }}
+              />
+              Pinnacle Teleservices
+            </a>{' '}
+            ·{' '}
+            <a
+              href="https://www.google.com/maps/place/Nagpur,+Maharashtra"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-affordance"
+              style={{ color: 'var(--text-dim)' }}
+            >
+              Nagpur
+            </a>
           </div>
 
           <div className="hero-cta-row" style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginBottom: 28 }}>
@@ -176,12 +202,31 @@ export default function Hero() {
 
           <ul className="hero-chips" style={{ listStyle: 'none', display: 'flex', flexWrap: 'wrap', gap: 8 }}>
             {LANGS.map(l => (
-              <li key={l} style={{
-                fontFamily: 'var(--mono)', fontSize: '.8rem',
-                background: 'var(--surface)', border: '1px solid var(--border)',
-                padding: '5px 14px', borderRadius: 999, color: 'var(--text)',
-              }}>
-                {l}
+              <li key={l}>
+                <a
+                  href={LANG_DOCS[l]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-block',
+                    fontFamily: 'var(--mono)', fontSize: '.8rem',
+                    background: 'var(--surface)', border: '1px solid var(--border)',
+                    padding: '5px 14px', borderRadius: 999, color: 'var(--text)',
+                    transition: 'transform .18s ease, box-shadow .18s ease, border-color .18s ease',
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.transform = 'translateY(-2px)'
+                    e.currentTarget.style.boxShadow = '0 8px 20px rgba(56,189,248,.28)'
+                    e.currentTarget.style.borderColor = 'var(--blue)'
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.transform = 'none'
+                    e.currentTarget.style.boxShadow = 'none'
+                    e.currentTarget.style.borderColor = 'var(--border)'
+                  }}
+                >
+                  {l}
+                </a>
               </li>
             ))}
           </ul>

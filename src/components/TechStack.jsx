@@ -1,5 +1,6 @@
 import { Tooltip } from 'antd'
 import { useReveal, useStaggerReveal } from '../hooks/useReveal'
+import { LANG_DOCS } from '../data/docLinks'
 
 const STACK = [
   {
@@ -77,20 +78,39 @@ export default function TechStack() {
                 letterSpacing: '.15em', textTransform: 'uppercase', marginBottom: 14,
               }}>{group.category}</h4>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
-                {group.items.map(item => (
-                  <Tooltip key={item.name} title={item.tip} placement="right" color="#111e35">
-                    <span style={{
-                      display: 'inline-block', fontFamily: 'var(--mono)', fontSize: '.8rem',
-                      color: 'var(--text-dim)', background: 'var(--surface)', border: '1px solid var(--border)',
-                      padding: '6px 12px', borderRadius: 8, cursor: 'default', width: 'fit-content',
-                      transition: 'border-color .15s, color .15s',
-                    }}
-                    onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--blue)'; e.currentTarget.style.color = 'var(--text)' }}
-                    onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--text-dim)' }}>
-                      {item.name}
-                    </span>
-                  </Tooltip>
-                ))}
+                {group.items.map(item => {
+                  const docHref = LANG_DOCS[item.name]
+                  const Tag = docHref ? 'a' : 'span'
+                  return (
+                    <Tooltip key={item.name} title={item.tip} placement="right" color="#111e35">
+                      <Tag
+                        {...(docHref ? { href: docHref, target: '_blank', rel: 'noopener noreferrer' } : {})}
+                        style={{
+                          display: 'inline-block', fontFamily: 'var(--mono)', fontSize: '.8rem',
+                          color: 'var(--text-dim)', background: 'var(--surface)', border: '1px solid var(--border)',
+                          padding: '6px 12px', borderRadius: 8, cursor: docHref ? 'pointer' : 'default', width: 'fit-content',
+                          transition: 'border-color .18s, color .18s, transform .18s, box-shadow .18s',
+                        }}
+                        onMouseEnter={e => {
+                          e.currentTarget.style.borderColor = 'var(--blue)'
+                          e.currentTarget.style.color = 'var(--text)'
+                          if (docHref) {
+                            e.currentTarget.style.transform = 'translateY(-2px)'
+                            e.currentTarget.style.boxShadow = '0 8px 20px rgba(56,189,248,.28)'
+                          }
+                        }}
+                        onMouseLeave={e => {
+                          e.currentTarget.style.borderColor = 'var(--border)'
+                          e.currentTarget.style.color = 'var(--text-dim)'
+                          e.currentTarget.style.transform = 'none'
+                          e.currentTarget.style.boxShadow = 'none'
+                        }}
+                      >
+                        {item.name}
+                      </Tag>
+                    </Tooltip>
+                  )
+                })}
               </div>
             </div>
           ))}
